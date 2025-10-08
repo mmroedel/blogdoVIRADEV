@@ -1,0 +1,36 @@
+/*Estilização do blog*/
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+/*Início da estilização do header/nav*/
+header{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background: green;
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navegacao{
+    padding: 10px;
+    justify-content: end;
+    display: flex;
+    justify-content: end;
+}
+.navegacao ul li a{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*Fim da estilização do header/nav*/
+main{
+    margin-top: 100px;
+}
