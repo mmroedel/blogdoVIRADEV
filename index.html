@@ -9,51 +9,76 @@
 <body>
     <header><!-- Cabeçalho do site -->
             <div class="logo">
-                <h1>Blog do VIRADEV</h1>
+                <h1><a href="#">Blog do VIRADEV</a></h1>
             </div>
             <div class="navegacao">
-                <ul>
+                <ul class="menu">
                     <li><a href="#">Home</a></li>
+                    <li><a href="#">Mesas</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
     </header>
     <main>
-        <section>
-            <article>
+        <section class="conteudo-principal"><!-- Conteúdo principal -->
+            <article class="blocos">
                 <h2>O que você vai encontrar aqui?</h2>
-                <p>Posts sobre desenvolvimento web, programação e tecnologia.</p>
+                <div>
+                <p class="Posts">Posts sobre desenvolvimento web, programação e tecnologia. 
+                    Aqui você vai encontrar dicas, amigos e muito mais.</p>
+                </div>
             </article>
-            <article>
-                <h2>Hora do café</h2>
-                <p>Senta aí e conversa com a gente!</p>
+            <article class="blocos">
+                <h2>As "Mesas" são para a hora do café</h2>
+                <div>
+                    <p class="Posts">Senta aí e conversa com a gente! Nas "Mesas" você pode 
+                        trocar ideias e fazer networking com outros profissionais e estudantes
+                         da linguagem de interesse.</p>
+                </div>
             </article>
-            <article>
+            <article class="blocos">
                 <h2>Quem somos nós?</h2>
-                <p>Somos um grupo de desenvolvedores apaixonados por tecnologia.</p>
+                <div>
+                    <p class="Posts">O VIRADEV é um local de encontro para desenvolvedores e 
+                        entusiastas de tecnologia. Você tirá dúvidas, ganha conhecimento e 
+                        ainda tem mais. Para quem faz home office, somos os amigos do setor que 
+                        você não tem</p>
+                </div>
             </article>
-            <article>
+            <article class="blocos">
                 <h2>Ache a sua "turma"</h2>
-                <p>Encontre outros desenvolvedores que compartilham seus interesses.</p>
+                <div>
+                    <p class="Posts">Encontre outros desenvolvedores que compartilham seus conhecimentos 
+                        e interesses. Aqui não tem espaço para preconceitos, apenas para aprendizado e 
+                        troca de experiências. Conhecer amigos, colegas desenvolvedores, aprimorar 
+                        conhecimento e quem sabe até o If do seu else.</p>
+                </div>
             </article>
-            
         </section>
         <aside><!-- Blocos laterais à direita-->
-            <div>
-                <h2>Posts Recentes</h2>
-                <ul>
+            <div class="BlocoLateral">
+                <h3>Posts Recentes</h3><br>
+                <ul class="noticias">
                     <li><a href="#">Ainda da tempo?</a></li>
                     <li><a href="#">Dicas para HTML e CSS</a></li>
                     <li><a href="#">Eu vou pro back ou pro front?</a></li>
                     <li><a href="#">Introdução ao JavaScript</a></li>
                 </ul>
             </div>
+            <div class="BlocoLateral">
+                <h3>Python</h3><br>
+                <ul class="noticias">
+                    <li><a href="#">Introdução ao Python</a></li>
+                    <li><a href="#">Dicas de Python</a></li>
+                    <li><a href="#">Python para Iniciantes</a></li>
+                </ul>
+            </div>
         </aside>
     </main>
     <footer>
-        <p>Blog do VIRADEV</p>
-        <p><a href="#">Política de Privacidade</a></p>
+        <p>Blog do VIRADEV</p><br>
+        <p>Política de Privacidade</p><br>
         <p>&copy; 2025 Blog do VIRADEV. Todos os direitos reservados.</p>
     </footer>
 </body>
