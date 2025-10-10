@@ -1,0 +1,221 @@
+/*Estilização do blog*/
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+    box-sizing: border-box;
+}
+/*Início da estilização do header/nav*/
+header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    padding-left: 30vh;
+    padding-right: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow:inset 0px 4px    5px 0px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.scroll {
+    background-color: #3498db;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+.logo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(100% - 50px);
+}
+.logo h2 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;  
+    width: 50px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    display: inline-block;
+}
+.menu li a:hover{
+    opacity: 0.7;
+    transition: 0.1s;
+}
+/*Fim da estilização do header/nav*/
+/*Início da estilização da parte central do main*/
+main{
+    display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    align-content: center;
+}
+.conteudo-principal{
+    margin-top: 60px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 100px);
+    display: block;
+}
+.blocos{
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.Posts{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.imgPosts{
+    width: 800px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+/* Fim da estilização da parte central do main*/
+/*Estilização dos blocos laterais*/
+aside{
+    width: 400px;
+    align-items: center;
+    margin-top: calc(60px + 20px);
+    padding-left: 40px;
+}
+.BlocoLateral{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    background: #f8f7f6f1;
+}
+/*Estilização do campo de busca*/
+#Buscar{
+    width: 50%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+.btnBuscar{
+    width: 50px;
+    line-height: 31px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-style: none;
+    background: linear-gradient(45deg, #073f7ef1, #0c6edff1, #5b9fecf1);
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.btnBuscar:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+}
+#Buscar input{
+    flex: 1;
+    border: none;
+    padding:0;
+    margin-top: 0;
+    outline: none;
+    float:left;
+}
+
+.noticias{
+    list-style: none;
+    display: inline-block;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.noticias li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    padding: 5px;
+}
+.noticias li a:hover{
+    transform: scale(1.1);
+}
+/*Estilização das Tags*/
+
+.tag{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.tag li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    padding: 5px;
+}
+.btnTags{
+    text-decoration: none;
+    background: linear-gradient(45deg, #073f7ef1, #0c6edff1, #5b9fecf1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    border: none;
+    color: rgb(255,255,255); 
+}
+.btnTags:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    font-weight: 700;    
+    text-decoration: none;
+}
+
+/*Fim da estilização dos blocos laterais*/
+/* Início da estilização do footer*/
+footer{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    font: 16pt;
+    text-decoration: none;
+    text-align: center;
+    align-items: end;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+}
