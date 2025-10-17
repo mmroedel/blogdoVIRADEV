@@ -1,23 +1,35 @@
-/*Estilização do blog*/
+/*----------Estilização do BLOG VIRADEV---------*/
+/*Responsividades media query */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 600px) and (max-width: 767px){
+}
+
+/*----------Estilização do HOME-----------------*/
 *{
     margin:0;
     padding: 0;
-    font-family: 'Times New Roman', Times, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
-/*Início da estilização do header/nav*/
-header{
-    height: 60px;
-    width: 100%;
-    display: flex;
-    padding-left: 30vh;
-    padding-right: 10vh;
+/*-------------Início da estilização do header/nav-------------------*/
+    header{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        padding-left: 30vh;
+        padding-right: 10vh;
     position: fixed;
     top: 0;
     z-index: 1;
     box-shadow:inset 0px 4px    5px 0px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     transition: background-color 0.3s ease;
+}
+header:hover {
+    background-color: #3498db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 .scroll {
     background-color: #3498db;
@@ -47,19 +59,46 @@ header{
     display: flex;
     gap: 20px;
     font-size: 20px;
+    position: relative;
+    transition: 0.3s;
 }
 .menu li a{
     text-decoration: none;
     padding: 15px;
     color: black;
     display: inline-block;
+    transition: 0.3s;
 }
-.menu li a:hover{
-    opacity: 0.7;
-    transition: 0.1s;
+/*-------------Estilização do Dropdown-----------------------*/
+.dropdown ul{
+    display: none;
+    position: absolute;
+    background-color: #3498db;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 0px;
+    list-style: none;
+    z-index: 1;
+}
+.dropdown:hover ul{
+    display: block;
+}
+.dropdown ul li{
+    margin: 0px 0;
+}
+.dropdown ul li a{
+    color: white;
+    font-size: 16px;
+    display: block;
+    min-width: 150px;
+}
+.dropdown ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #3498db;
 }
 /*Fim da estilização do header/nav*/
-/*Início da estilização da parte central do main*/
+/*------------Início da estilização da parte central do main---------------*/
 main{
     display: flex;
     margin-left: 300px;
@@ -94,7 +133,7 @@ main{
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
 }
 /* Fim da estilização da parte central do main*/
-/*Estilização dos blocos laterais*/
+/*---------------Estilização dos blocos laterais--------------*/
 aside{
     width: 400px;
     align-items: center;
@@ -111,7 +150,7 @@ aside{
     transition: 0.3s;
     background: #f8f7f6f1;
 }
-/*Estilização do campo de busca*/
+/*---------------Estilização do campo de busca------------*/
 #Buscar{
     width: 50%;
     margin-top: 10px;
@@ -149,7 +188,7 @@ aside{
     outline: none;
     float:left;
 }
-
+/*---------------Estilização do campo de linguagens------------*/
 .noticias{
     list-style: none;
     display: inline-block;
@@ -169,7 +208,7 @@ aside{
 .noticias li a:hover{
     transform: scale(1.1);
 }
-/*Estilização das Tags*/
+/*------------Estilização das Tags-------------*/
 
 .tag{
     list-style: none;
@@ -205,6 +244,149 @@ aside{
 }
 
 /*Fim da estilização dos blocos laterais*/
+
+
+/*-------------Estilização das páginas de login e cadastro------------------*/
+
+/*-------------Estilização das página de login------------------*/
+#acesso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-section{
+    text-align: center;
+    height: auto;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 14pt;
+
+}
+.login-form{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.login-form input{
+    padding: 10px;
+    width:  100%;
+    line-height: 25px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: black;
+    border-radius: 50px
+}
+.login-form button{
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.login-form button:hover{
+    transition: 1s;
+    background: linear-gradient(45deg,#5b9fecf1,#0c6edff1,#073f7ef1);
+    cursor: pointer;
+    color: black;
+}
+.login-form p{
+        font-size: 20px;
+        align-self: center;
+        margin-top: 10px;
+}
+.login-form a{
+        color: #3498db;
+        text-decoration: none;
+        font-weight: bold;
+}
+.login-form a:hover{
+        opacity: 0.7;
+        transition: 0.4s;
+}
+/*-------------Estilização das página de cadastro------------------*/
+.acesso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Cadastro-section{
+    margin: 125px 0;
+    text-align: center;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 14pt;
+}
+.Cadastro-form{
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Cadastro-form label{
+    font-size: 18px;
+    align-self: flex-start;
+    padding-left: 5px;
+}
+.Cadastro-form input{
+    padding: 10px;
+    width: 100%;
+    line-height: 25px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.Cadastro-form button{
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.Cadastro-form button:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: black;
+    background: linear-gradient(45deg, #073f7ef1, #0c6edff1, #5b9fecf1);
+}
+.Cadastro-form p{
+    font-size: 20px;
+    align-self: center;
+
+}
+.Cadastro-form a{
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+    .Cadastro-form a:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+}
 /* Início da estilização do footer*/
 footer{
     height: auto;

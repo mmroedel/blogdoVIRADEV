@@ -3,12 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!header) return;
 
     function toggleHeaderScroll() {
-        if (window.scrollY > 0) {
+        if (window.scrollY > 20) {
             header.classList.add('scroll');
         } else {
             header.classList.remove('scroll');
         }
     }
     toggleHeaderScroll();
+
     window.addEventListener('scroll', toggleHeaderScroll);
 });

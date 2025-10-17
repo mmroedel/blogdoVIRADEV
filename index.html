@@ -3,21 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog do VIRADEV</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title> &#x1F913; Blog do VIRADEV</title>
 </head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 <body>
     <header id="scrollheader"><!-- Cabeçalho do site -->
             <div class="logo">
-                <h2><a href="#">Blog do VIRADEV</a></h2>
+                <h2><a href="index.html">Blog do VIRADEV</a></h2>
             </div>
-            <div class="navegacao">
+            <div class="navegacao"> <!-- Menu de navegação -->
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Mesas</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown"><a href="#">Mesas</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">GO</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">Java</a></li>
+                            </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Sobre</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#">Nossa História</a></li>
+                                <li><a href="#">Equipe</a></li>
+                                <li><a href="#">Missão</a></li>
+                            </ul>
+                    </li>
+                    <li class="dropdown"><a href="#">Contato</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Fale Conosco</a></li>
+                            <li><a href="#">Redes Sociais</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="indexlogin.html" target="_blank">Login</a></li>
+                    <li><a href="indexcadastro.html" target="_blank">Cadastrar</a></li>
                 </ul>
             </div>
     </header>
@@ -55,7 +75,7 @@
                     <p class="Posts">Encontre outros desenvolvedores que compartilham seus conhecimentos 
                         e interesses. Aqui não tem espaço para preconceitos, apenas para aprendizado e 
                         troca de experiências. Conhecer amigos, colegas desenvolvedores, aprimorar 
-                        conhecimento e quem sabe até o If do seu else.</p>
+                        conhecimento e quem sabe até o else do seu if.</p>
                 </div>
             </article>
         </section>
@@ -68,7 +88,7 @@
                 </div>
             </div>
             <div class="BlocoLateral">
-                <h3>Linguagens</h3><br>
+                <h3>Saiba Mais</h3><br>
                 <div>
                 <ul class="noticias">
                     <li><a href="#">Introdução ao Python</a></li>
@@ -82,7 +102,7 @@
             <div class="BlocoLateral">
                 <h3>Tags</h3>
                 <div>
-                <ul class="tag">
+                <ul class="tag"> <!-- Botões de tags -->
                     <li><button class="btnTags"><a href="#">HTML</a></button></li>
                     <li><button class="btnTags"><a href="#">CSS</a></button></li>
                     <li><button class="btnTags"><a href="#">JavaScript</a></button></li>
@@ -97,7 +117,7 @@
     <footer>
         <p>Blog do VIRADEV</p><br>
         <p>Política de Privacidade</p><br>
-        <p>&copy; 2025 Blog do VIRADEV. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Blog do VIRADEV. Por Murilo Röedel</p>
     </footer>
 </body>
 </html>
